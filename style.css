@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 35px;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/bg-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container .logo {
+    width: 130px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.container .container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.container .container-box img {
+    margin-bottom: 50px;
+}
+
+.container .container-box .text h1 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container .container-box .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .container-box .text p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.container .container-box .text button {
+    border: none;
+    background: none;
+    color: hsl(257, 40%, 49%);
+    text-align: center;
+    display: block;
+    padding: 15px;
+    width: 70%;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.container .container-box .text button:active{
+    background-color: hsl(300, 69%, 71%);
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.container .social {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.container .social .fa-brands:hover{
+    color:hsl(300, 69%, 71%) ;
+    border: 1px solid hsl(300, 69%, 71%) ;
+}   
+
+
+.container .social .fa-brands {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    /* Ajusta el ancho y alto según tus necesidades */
+    height: 40px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        padding: 40px 60px;
+        background-image: url('images/bg-desktop.svg');
+    }
+
+    .container .logo {
+        width: 220px;
+        margin-bottom: 75px;
+    }
+
+    .container .container-box {
+        flex-direction: row;
+    }
+
+    .container .container-box img {
+        margin-bottom: 0;
+        width: 720px;
+    }
+
+    .container .container-box .text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-bottom: 60px;
+        padding-left: 60px;
+        padding-right: 80px;
+
+    }
+
+    .container .container-box .text h1 {
+        font-size: 38px;
+        text-align: start;
+        padding-bottom: 15px;
+    }
+
+    .container .container-box .text p {
+        text-align: start;
+    }
+
+    .container .container-box .text button {
+        width: 180px;
+
+    }
+
+    .container .social {
+        justify-content: flex-end;
+        padding-right: 20px;
+        
+    }
+
+
+
+    footer {
+        display: none;
+    }
+}
